@@ -123,9 +123,25 @@ book.author = "J.R.R. Tolkien"
 book.pages = 1241;
 book.readCount = 5;
 
-book.info = () => 
+book.info = function() 
 {
-    return `${book.title} by ${book.author}, has ${book.pages} pages. I have read this book ${book.readCount} times.`;
+    return `${this.title} by ${this.author}, has ${this.pages} pages. I have read this book ${this.readCount} times.`;
 }
 
 console.log(book.info());
+
+
+let animal = 
+{
+    legCount: 4,
+    hasFur: true,
+    hasTail: true,
+    name: "dog",
+};
+
+animal.info = function() 
+{
+    return `A ${this.name} has ${this.legCount} legs. It is ${this.hasFur} that it has fur and it is ${this.hasTail} that it has a tail. `
+}
+
+console.log(animal.info());
