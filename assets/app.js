@@ -119,7 +119,7 @@ console.log(arraySum(numbers));
 
 const book = {};
 book.title = "Lord Of The Rings";
-book.author = "J.R.R. Tolkien"
+book.author = "J.R.R. Tolkien";
 book.pages = 1241;
 book.readCount = 5;
 
@@ -145,3 +145,25 @@ animal.info = function()
 }
 
 console.log(animal.info());
+
+
+// ================================== Practice ==================================
+
+
+let nums = [1, 2, 3, 4, 5];
+
+function double(num) 
+{
+    return num * 2;
+}
+
+nums.forEach(double);
+
+console.log(nums);
+
+nums.map(double);
+
+let doubledNums = nums.map(double);
+
+console.log(doubledNums);
+
